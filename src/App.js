@@ -3,6 +3,7 @@ import "./App.css";
 //IMPORT COMPONENTS
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 //IMPORT PAGES
 import Home from "./pages/Home";
 import Gynecology from "./pages/Gynecology";
@@ -23,6 +24,7 @@ function App() {
           element={<VaginalRejuvenation />}
         />
       </Routes>
+      <Footer />
     </>
   );
 }
