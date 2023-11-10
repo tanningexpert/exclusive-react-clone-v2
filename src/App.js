@@ -1,5 +1,7 @@
 import React from "react";
+//IMPORT CSS
 import "./App.css";
+import "./styles/PageStyles.css";
 //IMPORT COMPONENTS
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
