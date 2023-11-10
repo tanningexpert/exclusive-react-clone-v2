@@ -8,3 +8,178 @@
     background-size: cover;
     background-position: center;
   }
+
+  /*TESTIMONIALS*/
+.testimonialWrapper {
+  background-color: #00AAAF;
+  width: auto;
+  height: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonialButton {
+  color: #00AAAF;
+  border-radius: 5%;
+  height: 40px;
+  width: 175px;
+  font-size: 18px;
+  background-color: white;
+  border: 2px solid #00AAAF;
+  padding: 5px;
+}
+
+.testimonialButton:hover {
+  background-color: white;
+  font-size: 22px;
+  color: #00AAAF;
+}
+
+.testimonialIntro {
+  color: white;
+  font-size: 1.25rem;
+}
+
+/*MANTRA*/
+.mantra {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.health,
+.beauty {
+  font-size:40px;
+}
+
+.health {
+  color: #63DFF7;
+}
+
+.beauty {
+  color:#00AAAF;
+}
+
+.intro {
+  width: 60%;
+  margin: 20px auto;
+}
+
+/*ABOUT US*/
+.aboutUsWrapper {
+  background-color: #FAFAFA;
+  width: 75%;
+  margin: 50px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsWrapper h1 {
+  text-align: center; 
+  padding: 30px;
+  font-size: 24px;
+}
+
+.aboutLeft img {
+  height:450px;
+}
+
+.aboutUsBody {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.aboutUsTitle {
+  font-size: 30px;
+}
+
+.providerPhoto {
+  border-radius: 50%;
+}
+
+.aboutRight {
+  margin: 0px 0px;
+  width: 40%;
+}
+
+/* GYNECOLOGY PAGE*/
+.gynecologyPage {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.gynecologyLogoImg {
+  max-width: 100%;
+}
+
+.gynecologyIntro {
+  flex-basis: 30%;
+}
+
+.gynecologyServices {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gynecologyServiceContent {
+  flex-basis: 50%;
+}
+
+.gynecologyServices h2{
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+
+.gynecologyServices li{
+  color: var(--dark-blue);
+  list-style: none;
+  line-height: 3rem;
+  margin-left: 20px;
+}
+
+.gynecologyServices li:hover {
+  color: rgb(219, 35, 142)
+}
+
+/* VAGINAL REJUVENATION PAGE */
+
+/* AESTHETICS PAGE */
+.aestheticsTitle {
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.aestheticsParagraph {
+  margin-top: 20px;
+}
+
+.aestheticsScheduleTitle {
+  color: var(--main-color);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.aestheticsTitle, 
+.aestheticsScheduleTitle,
+.aestheticsParagraph {
+  text-align: center;
+}
+
+.primaryButtonContainer {
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/* PATIENT RESOURCES PAGE */
+
+/* CONTACT US PAGE */

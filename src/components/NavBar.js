@@ -3,9 +3,17 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <ul className="desktopMenu">
-      <li>
-        <Link to="/">Home</Link>
-      </li>
+      <div className="dropDownTrigger">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <div className="dropDownContent">
+          <li>About</li>
+          <li>Reviews</li>
+          <li>Office Policies</li>
+          <li>Blog</li>
+        </div>
+      </div>
       <li>
         <Link to="/gynecology">Gynecology</Link>
       </li>

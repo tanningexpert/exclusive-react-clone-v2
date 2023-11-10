@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Gynecology from "./pages/Gynecology";
 import VaginalRejuvenation from "./pages/VaginalRejuvenation";
+import Aesthetics from "./pages/Aesthetics";
+
 //IMPORT ROUTER
 import { Route, Routes } from "react-router-dom";
 
@@ -25,6 +27,7 @@ function App() {
           path="/vaginal-rejuventation/"
           element={<VaginalRejuvenation />}
         />
+        <Route path="/aesthetics/" element={<Aesthetics />} />
       </Routes>
       <Footer />
     </>
