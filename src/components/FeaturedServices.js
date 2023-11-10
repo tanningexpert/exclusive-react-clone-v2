@@ -1,4 +1,5 @@
 import Images from "../img/ImgIndex";
+import FeaturedButton from "./FeaturedServicesButton";
 
 const FeaturedServices = () => {
   return (
@@ -46,11 +47,10 @@ const FeaturedServices = () => {
             </ul>
           </div>
         </div>
-        <br />
-        <button className="blueButton">View All Services</button>
-        <br />
-        <br />
-        <button className="blueButton">Request An Appointment</button>
+        <div className="featuredServiceButtonContainer">
+          <FeaturedButton>View All Services</FeaturedButton>
+          <FeaturedButton>Request An Appointment</FeaturedButton>
+        </div>
       </div>
     </section>
   );
