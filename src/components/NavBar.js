@@ -38,7 +38,6 @@ const NavBar = () => {
           <li>Vaginal Rejuvenation</li>
           <li>Cellulite Reduction</li>
           <li>Foot Detox Bath</li>
-          <li>Foot Detox Bath</li>
           <li>Pre|Post Care Instructions</li>
         </div>
       </div>
@@ -59,7 +58,7 @@ const NavBar = () => {
           <Link to="/contact-us">Contact Us</Link>
         </li>
         <div className="dropDownContent">
-          <li>Appointment Request</li>
+          <Link to="/appointment-request">Appointment Request</Link>
           <li>Send a Secure Email</li>
         </div>
       </div>

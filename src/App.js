@@ -6,14 +6,15 @@ import "./styles/PageStyles.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-//IMPORT PAGES
+//IMPORT MAIN PAGES
 import Home from "./pages/Home";
 import Gynecology from "./pages/Gynecology";
 import VaginalRejuvenation from "./pages/VaginalRejuvenation";
 import Aesthetics from "./pages/Aesthetics";
 import PatientResources from "./pages/PatientResources";
 import ContactUs from "./pages/ContactUs";
-
+//IMPORT SUB PAGES
+import AppointmentRequest from "./pages/AppointmentRequest";
 //IMPORT ROUTER
 import { Route, Routes } from "react-router-dom";
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/aesthetics/" element={<Aesthetics />} />
         <Route path="/patient-resources/" element={<PatientResources />} />
         <Route path="/contact-us/" element={<ContactUs />} />
+        <Route path="/appointment-request/" element={<AppointmentRequest />} />
       </Routes>
       <Footer />
     </>

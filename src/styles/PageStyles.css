@@ -259,3 +259,51 @@
   border-bottom: 1px solid var(--main-color);
   margin-bottom: 20px;
 }
+
+/* APPOINTMENT REQUEST PAGE */
+.apptRequestIntro {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin: 50px 0 20px;
+}
+
+.appointmentRequestWrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.caldendarWrapper {
+  background-color: var(--light-blue);
+  width: 300px;
+  height: 300px;
+}
+
+.apptRequestFormWrapper {
+  /* border: 1px solid var(--main-color); */
+}
+
+.apptRequestForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.formHeader {
+  font-weight: 700;
+}
+
+.apptRequestForm input,
+.apptRequestForm textarea {
+  /* margin: 10px 0px; */
+}
+
+.firstLastNameInput,
+.patientDetailsInput, 
+.patientContactInfo {
+  display: flex;
+  gap: 10px;
+}
