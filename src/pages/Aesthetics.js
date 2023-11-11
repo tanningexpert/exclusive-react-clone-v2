@@ -1,6 +1,7 @@
 import PrimaryButton from "../components/PrimaryButton";
 import AestheticsServiceContainer from "../components/AestheticsServiceContainer";
 import Images from "../img/ImgIndex.js";
+import * as data from "../data.js";
 
 const Aesthetics = () => {
   return (
@@ -28,7 +29,7 @@ const Aesthetics = () => {
         <AestheticsServiceContainer
           imgSrc={Images.vaginalRejuvenation}
           title="Vaginal Rejuvenation"
-          price="$600"
+          price={data.vaginalRejuvenation.price}
           time="30 mins"
           schedule="1 - 3 Sessions"
           summary="Isn't it time you enjoyed sex again? Vaginal rejuvenation can help restore vaginal tightness, reverse vaginal dryness, improve bladder control and give plumper labial appearance without surgery or significant downtime."
@@ -64,6 +65,22 @@ const Aesthetics = () => {
           time="10 mins"
           schedule="Every 1-2 weeks"
           summary="Eating a healthy diet and exercising regularly is the best way to keep your body in good shape, but sometimes you just need that extra boost. A vitamin B12 injection is a fast way to get your body back on track with weight loss, increased energy levels, better skin health and more!"
+        />
+        <AestheticsServiceContainer
+          imgSrc={Images.skinnyShot}
+          title="Skinny Shot"
+          price="$35"
+          time="10 mins"
+          schedule="Every 1-2 weeks"
+          summary="Struggling to rid yourself of a few extra pounds? The Skinny Shot is specially formulated to help suppress appetite, boost energy levels and maximize the liver's fat burning functions. It is highly effective for people who want to lose 30-50 pounds and for anyone who has hit a plateau in their attempts to lose weight."
+        />
+        <AestheticsServiceContainer
+          imgSrc={Images.stretchMarkRemoval}
+          title="Stretch Mark Removal"
+          price="$350"
+          time="90 mins"
+          schedule="1 - 3 Sessions"
+          summary="Showcase your curves like never before with the most innovative, cutting-edge technology for eliminating stretch marks."
         />
       </div>
     </>

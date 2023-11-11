@@ -1,3 +1,5 @@
+import VaginalRejuvenation from "../pages/VaginalRejuvenation";
+
 const AestheticsServiceContainer = ({
   imgSrc,
   title,

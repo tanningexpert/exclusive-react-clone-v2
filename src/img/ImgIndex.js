@@ -15,8 +15,10 @@ const Images = {
   celluliteReductionRf: require("./Service Menu Images/Cellulite - Fractora.jpg"),
   hormonePellet: require("./Service Menu Images/Hormone Pellet Therapy.jpg"),
   vitaminB12: require("./Service Menu Images/Vitamin B12.jpg"),
-  // skinnyShot: require(""),
+  skinnyShot: require("./Service Menu Images/Skinny Energy Shot (2).jpg"),
   stretchMarkRemoval: require("./Service Menu Images/Stretch Marks.jpg"),
+  //PATIENT RESOURCES PAGE BANNER
+  patientResources: require("./Patient Resources Banner.png"),
 };
 
 export default Images;

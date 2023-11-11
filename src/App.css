@@ -135,7 +135,7 @@
   color: #524F4F;
   background-color: #DFF6F7;
   width: 75%;
-  margin: auto;
+  margin: 20px auto;
   padding: 30px;
 }
 
@@ -195,7 +195,7 @@
   width: 300px;
   height: 50px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .primaryButton:hover {
@@ -206,7 +206,7 @@
 /* AESTHETICS SERVICE REPEATER */
 .aestheticsServiceGrid { 
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 30px;
   flex-wrap: wrap;
   width: 90%;
@@ -239,6 +239,10 @@
 
 .serviceDetails {
   text-align: center;
+}
+
+.serviceSchedule{
+  border-top: 1px solid black;
 }
 
 .aestheticsImage {
@@ -275,11 +279,20 @@
   color: black;
   font-weight: 800;
   padding: 10px;
-
-
 }
 
+/* AESTHETICS PAGE HEADER COMPONENT */
+.aestheticsPageHeader {
+  background-color: var(--main-color);
+  width: 100%;
 
+}
+.aestheticsPageTitle {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 20px 100px;
+}
 
 
 /* .App {

@@ -150,8 +150,6 @@
   color: rgb(219, 35, 142)
 }
 
-/* VAGINAL REJUVENATION PAGE */
-
 /* AESTHETICS PAGE */
 .aestheticsTitle {
   color: var(--main-color);
@@ -186,7 +184,44 @@
   margin-top: 30px;
 }
 
-
 /* PATIENT RESOURCES PAGE */
+.patientResourcesImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.patientResourcesImage {
+  height: 250px;
+}
+
+.paperWorkTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 50px auto 20px;
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+.formButtonContainer {
+  width: 40%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.instructionButtonContainer {
+  text-align: center;
+}
+
+/* VAGINAL REJUVENATION PAGE */
+.aestheticsPageBody {
+  width: 60%;
+  /* margin: 0 auto; */
+}
+
+
 
 /* CONTACT US PAGE */
