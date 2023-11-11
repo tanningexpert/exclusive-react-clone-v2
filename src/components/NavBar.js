@@ -14,21 +14,55 @@ const NavBar = () => {
           <li>Blog</li>
         </div>
       </div>
-      <li>
-        <Link to="/gynecology">Gynecology</Link>
-      </li>
+
+      <div className="dropDownTrigger">
+        <li>
+          <Link to="/gynecology">Gynecology</Link>
+        </li>
+        <div className="dropDownContent">
+          <li>Gynecology Services</li>
+          <li>Hormone Replacement Therapy</li>
+          <li>Medical Weightloss</li>
+        </div>
+      </div>
+
       <li>
         <Link to="/vaginal-rejuventation">Vaginal Rejuvenation</Link>
       </li>
-      <li>
-        <Link to="/aesthetics">Aesthetics</Link>
-      </li>
-      <li>
-        <Link to="/patient-resources">Patient Resources</Link>
-      </li>
-      <li>
-        <Link to="/contact-us">Contact Us</Link>
-      </li>
+
+      <div className="dropDownTrigger">
+        <li>
+          <Link to="/aesthetics">Aesthetics</Link>
+        </li>
+        <div className="dropDownContent">
+          <li>Vaginal Rejuvenation</li>
+          <li>Cellulite Reduction</li>
+          <li>Foot Detox Bath</li>
+          <li>Foot Detox Bath</li>
+          <li>Pre|Post Care Instructions</li>
+        </div>
+      </div>
+
+      <div className="dropDownTrigger">
+        <li>
+          <Link to="/patient-resources">Patient Resources</Link>
+        </li>
+        <div className="dropDownContent">
+          <li>Forms</li>
+          <li>Getting Your Lab Results</li>
+          <li>Financing</li>
+        </div>
+      </div>
+
+      <div className="dropDownTrigger">
+        <li>
+          <Link to="/contact-us">Contact Us</Link>
+        </li>
+        <div className="dropDownContent">
+          <li>Appointment Request</li>
+          <li>Send a Secure Email</li>
+        </div>
+      </div>
     </ul>
   );
 };

@@ -312,15 +312,15 @@
   color: var(--main-color);
 }
 
-table {
+.treatmentTable {
   margin: 10px auto;
   border-collapse: collapse;
   border-style: hidden;
   /*Remove all the outside
   borders of the existing table*/
 }
-table td,
-table th  {
+.treatmentTable td,
+.treatmentTable th  {
   padding: 0.5rem;
   border: 1px solid var(--main-color);
 }

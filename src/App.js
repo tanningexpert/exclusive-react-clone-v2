@@ -12,6 +12,7 @@ import Gynecology from "./pages/Gynecology";
 import VaginalRejuvenation from "./pages/VaginalRejuvenation";
 import Aesthetics from "./pages/Aesthetics";
 import PatientResources from "./pages/PatientResources";
+import ContactUs from "./pages/ContactUs";
 
 //IMPORT ROUTER
 import { Route, Routes } from "react-router-dom";
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/aesthetics/" element={<Aesthetics />} />
         <Route path="/patient-resources/" element={<PatientResources />} />
+        <Route path="/contact-us/" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>
