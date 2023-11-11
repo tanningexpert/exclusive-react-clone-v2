@@ -11,6 +11,7 @@
 :root {
   --main-color: #00AAAF;
   --dark-blue: #002b2c;
+  --light-blue: #e0f6f7;
 }
 
 /* HEADER */
@@ -281,7 +282,7 @@
   padding: 10px;
 }
 
-/* AESTHETICS PAGE HEADER COMPONENT */
+/* AESTHETIC SERVICE PAGE HEADER COMPONENT */
 .aestheticsPageHeader {
   background-color: var(--main-color);
   width: 100%;
@@ -291,9 +292,43 @@
   color: white;
   font-size: 2rem;
   font-weight: 400;
-  padding: 20px 100px;
+  padding: 20px 200px;
 }
 
+/* AESTHETIC SERVICE PAGE PROCEDURE DETAIL COMPONENT */
+.procedureContainer {
+  background-color: var(--light-blue);
+  height: 100%;
+}
+
+.procedureContainer h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 30px;
+}
+
+.treatmentTable {
+  color: var(--main-color);
+}
+
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-style: hidden;
+  /*Remove all the outside
+  borders of the existing table*/
+}
+table td,
+table th  {
+  padding: 0.5rem;
+  border: 1px solid var(--main-color);
+}
+
+.treatmentAppointmentRequestButton {
+  text-align: center;
+  margin-top: 10px;
+}
 
 /* .App {
   text-align: center;

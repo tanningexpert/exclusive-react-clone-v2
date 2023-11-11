@@ -217,11 +217,32 @@
 }
 
 /* VAGINAL REJUVENATION PAGE */
-.aestheticsPageBody {
-  width: 60%;
-  /* margin: 0 auto; */
+.aestheticsPageWrapper {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 }
 
+.aestheticsPageBody {
+  width: 60%;
+  margin: 0 auto;
+}
 
+.aestheticsPageBody h2 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.aestheticsPageBody p:first-child {
+  margin-top: 20px;
+}
+
+.aestheticsPageBody p {
+  line-height: 1.25rem;
+}
+
+.aestheticsPageBody ul {
+  padding-left: 3rem;
+}
 
 /* CONTACT US PAGE */

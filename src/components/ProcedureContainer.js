@@ -1,3 +1,5 @@
+import FeaturedButton from "./FeaturedServicesButton.js";
+
 const ProcedureContainer = ({
   treatmentCost,
   treatmentLength,
@@ -6,6 +8,7 @@ const ProcedureContainer = ({
 }) => {
   return (
     <div className="procedureContainer">
+      <h2>Plan Your Procedure</h2>
       <table className="treatmentTable">
         <tr>
           <th>Average Cost</th>
@@ -24,6 +27,10 @@ const ProcedureContainer = ({
           <td>{downtime}</td>
         </tr>
       </table>
+      <h2>Schedule Your Consult</h2>
+      <div className="treatmentAppointmentRequestButton">
+        <FeaturedButton>Request An Appointment</FeaturedButton>
+      </div>
     </div>
   );
 };

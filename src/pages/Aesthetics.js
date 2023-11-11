@@ -28,10 +28,10 @@ const Aesthetics = () => {
         />
         <AestheticsServiceContainer
           imgSrc={Images.vaginalRejuvenation}
-          title="Vaginal Rejuvenation"
+          title={data.vaginalRejuvenation.title}
           price={data.vaginalRejuvenation.price}
-          time="30 mins"
-          schedule="1 - 3 Sessions"
+          time={data.vaginalRejuvenation.length}
+          schedule={data.vaginalRejuvenation.schedule}
           summary="Isn't it time you enjoyed sex again? Vaginal rejuvenation can help restore vaginal tightness, reverse vaginal dryness, improve bladder control and give plumper labial appearance without surgery or significant downtime."
         />
         <AestheticsServiceContainer
