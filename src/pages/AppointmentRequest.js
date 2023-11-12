@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const AppointmentRequest = () => {
+  const [paymentMethod, setPaymentMethod] = useState("");
+
   return (
     <>
       <p className="apptRequestIntro">
@@ -34,7 +38,7 @@ const AppointmentRequest = () => {
                 placeholder="Date of Birth"
               />
               <select id="gender" name="gender">
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Choose gender
                 </option>
                 <option value="male">Male</option>
@@ -54,7 +58,7 @@ const AppointmentRequest = () => {
             </div>
 
             <select id="visitType" name="visitType">
-              <option value="" disabled selected>
+              <option value="" disabled>
                 Preferred visit type
               </option>
               <option value="office">In-office</option>
@@ -68,19 +72,28 @@ const AppointmentRequest = () => {
             />
 
             <p className="formHeader">Payment Method</p>
-            <select id="paymentMethod" name="paymentMethod">
-              <option value="" disabled selected>
+            <select
+              id="paymentMethod"
+              name="paymentMethod"
+              value={paymentMethod}
+              onChange={(e) => {
+                setPaymentMethod(e.target.value);
+              }}
+            >
+              <option value="" disabled>
                 Select payment method
               </option>
               <option value="insurance">Insurance</option>
               <option value="selfpay">Self-Pay</option>
             </select>
-            <input
-              type="text"
-              id="insuranceCompany"
-              name="insuranceCompany"
-              placeholder="Insurance Company"
-            />
+            {paymentMethod === "insurance" && (
+              <input
+                type="text"
+                id="insuranceCompany"
+                name="insuranceCompany"
+                placeholder="Insurance Company"
+              />
+            )}
             <input type="submit" />
           </form>
         </div>
