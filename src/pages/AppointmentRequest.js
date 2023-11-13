@@ -58,7 +58,7 @@ const AppointmentRequest = () => {
             </div>
 
             <select id="visitType" name="visitType">
-              <option value="" disabled>
+              <option value="" disabled select>
                 Preferred visit type
               </option>
               <option value="office">In-office</option>

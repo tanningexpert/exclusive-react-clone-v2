@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FeaturedButton from "./FeaturedServicesButton.js";
 
 const ProcedureContainer = ({
@@ -29,7 +30,9 @@ const ProcedureContainer = ({
       </table>
       <h2>Schedule Your Consult</h2>
       <div className="treatmentAppointmentRequestButton">
-        <FeaturedButton>Request An Appointment</FeaturedButton>
+        <Link to="/appointment-request">
+          <FeaturedButton>Request An Appointment</FeaturedButton>
+        </Link>
       </div>
     </div>
   );

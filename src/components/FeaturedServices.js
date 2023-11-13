@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Images from "../img/ImgIndex";
 import FeaturedButton from "./FeaturedServicesButton";
 
@@ -48,8 +50,12 @@ const FeaturedServices = () => {
           </div>
         </div>
         <div className="featuredServiceButtonContainer">
-          <FeaturedButton>View All Services</FeaturedButton>
-          <FeaturedButton>Request An Appointment</FeaturedButton>
+          <Link to="/aesthetics">
+            <FeaturedButton>View All Services</FeaturedButton>
+          </Link>
+          <Link to="/appointment-request">
+            <FeaturedButton>Request An Appointment</FeaturedButton>
+          </Link>
         </div>
       </div>
     </section>

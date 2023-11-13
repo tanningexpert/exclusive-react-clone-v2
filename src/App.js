@@ -11,16 +11,22 @@ import Home from "./pages/Home";
 import Gynecology from "./pages/Gynecology";
 import VaginalRejuvenation from "./pages/VaginalRejuvenation";
 import Aesthetics from "./pages/Aesthetics";
+import AestheticsV2 from "./pages/AestheticsV2";
 import PatientResources from "./pages/PatientResources";
 import ContactUs from "./pages/ContactUs";
 //IMPORT SUB PAGES
 import AppointmentRequest from "./pages/AppointmentRequest";
 //IMPORT ROUTER
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <div className="App">
+        {/* ScrollToTop component inside App component */}
+        <ScrollToTop />
+      </div>
       <Header />
       <NavBar />
       <Routes>
@@ -31,6 +37,8 @@ function App() {
           element={<VaginalRejuvenation />}
         />
         <Route path="/aesthetics/" element={<Aesthetics />} />
+        <Route path="/aesthetics-v2/" element={<AestheticsV2 />} />
+
         <Route path="/patient-resources/" element={<PatientResources />} />
         <Route path="/contact-us/" element={<ContactUs />} />
         <Route path="/appointment-request/" element={<AppointmentRequest />} />

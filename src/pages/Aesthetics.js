@@ -1,6 +1,9 @@
 import PrimaryButton from "../components/PrimaryButton";
 import AestheticsServiceContainer from "../components/AestheticsServiceContainer";
 import Images from "../img/ImgIndex.js";
+import { aestheticsServices } from "../data.js";
+import { Link } from "react-router-dom";
+
 import * as data from "../data.js";
 
 const Aesthetics = () => {
@@ -14,16 +17,29 @@ const Aesthetics = () => {
       <h2 className="aestheticsScheduleTitle">Schedule Your Consult</h2>
       <div className="primaryButtonContainer">
         <PrimaryButton>Call / Text 214-702-6581</PrimaryButton>
-        <PrimaryButton>Request An Appointment</PrimaryButton>
+        <Link to="/appointment-request">
+          <PrimaryButton>Request An Appointment</PrimaryButton>
+        </Link>
       </div>
 
       <div className="aestheticsServiceGrid">
-        <AestheticsServiceContainer
+        {aestheticsServices.map((aestheticsService) => (
+          <AestheticsServiceContainer
+            title={aestheticsService.title}
+            price={aestheticsService.price}
+            time={aestheticsService.length}
+            schedule={aestheticsService.schedule}
+            summary={aestheticsService.summary}
+            imgSrc={aestheticsService.imgSrc}
+          />
+        ))}
+
+        {/* <AestheticsServiceContainer
           imgSrc={Images.footDetox}
-          title="Foot Detox Bath"
-          price="$50"
-          time="30 mins"
-          schedule="1 - 6 Sessions"
+          title={data.footDetoxBath.title}
+          price={data.footDetoxBath.price}
+          time={data.footDetoxBath.length}
+          schedule={data.footDetoxBath.schedule}
           summary="A relaxing and rejuvenating spa service that aims to promote overall well-being by helping to rid the body of toxins and impurities through the feet."
         />
         <AestheticsServiceContainer
@@ -36,10 +52,10 @@ const Aesthetics = () => {
         />
         <AestheticsServiceContainer
           imgSrc={Images.celluliteReduction}
-          title="Cellulite Reduction Non Invasive"
-          price="$100"
-          time="90 mins"
-          schedule="4 - 8 Sessions"
+          title={data.celluliteReduction.title}
+          price={data.celluliteReduction.price}
+          time={data.celluliteReduction.length}
+          schedule={data.celluliteReduction.schedule}
           summary="Getting rid of cellulite can be expensive and painful, but we have an affordable alternative! Our non-invasive skin tightening treatment uses the latest in RF technology to improve skin tone, texture, and firmness for results that last up to 12 months."
         />
         <AestheticsServiceContainer
@@ -81,7 +97,7 @@ const Aesthetics = () => {
           time="90 mins"
           schedule="1 - 3 Sessions"
           summary="Showcase your curves like never before with the most innovative, cutting-edge technology for eliminating stretch marks."
-        />
+        /> */}
       </div>
     </>
   );

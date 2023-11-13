@@ -39,6 +39,9 @@ const NavBar = () => {
           <li>Cellulite Reduction</li>
           <li>Foot Detox Bath</li>
           <li>Pre|Post Care Instructions</li>
+          <li>
+            <Link to="/aesthetics-v2">View All Services</Link>
+          </li>
         </div>
       </div>
 
